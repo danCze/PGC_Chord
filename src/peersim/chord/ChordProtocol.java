@@ -87,9 +87,11 @@ public class ChordProtocol implements EDProtocol {
 			Transport t = (Transport) node.getProtocol(p.tid);
 			Node n = message.getSender();
 			
-			BigInteger NodeChordID = ((ChordProtocol) node.getProtocol(pid)).chordId;
-			if (target == ((ChordProtocol) node.getProtocol(pid)).chordId) {
-			//if (target == NodeChordID || idInab(target, ((ChordProtocol) predecessor.getProtocol(pid)).chordId, NodeChordID)) {
+			BigInteger thisChordID = ((ChordProtocol) node.getProtocol(pid)).chordId;
+			BigInteger predChordID = ((ChordProtocol) predecessor.getProtocol(pid)).chordId;
+			
+			//if (target == thisChordID) {
+			if (target == thisChordID || isSearchEndNode(target, node)) {
 				// mandare mess di tipo final
 				//enviar mensagem final
 				t.send(node, n, new FinalMessage(message.getHopCounter()), pid);
@@ -98,6 +100,7 @@ public class ChordProtocol implements EDProtocol {
 		        currPath.add(target); //== currPath.add(((ChordProtocol) node.getProtocol(pid)).chordId);
 		        
 		        //if key (ID) equals this node search is complete and so is peer's path array
+		        System.out.println("is end node 1st case"); //debug
 		        fillPathArray();
 			}
 			if (target != ((ChordProtocol) node.getProtocol(pid)).chordId) {
@@ -124,8 +127,8 @@ public class ChordProtocol implements EDProtocol {
 					currPath.add(((ChordProtocol) dest.getProtocol(pid)).chordId); //!= currPath.add(target);
 					//System.out.println(currPath.get(currPath.size() - 1) + " "); //debug
 					
-					if(idInab(target, ((ChordProtocol) predecessor.getProtocol(pid)).chordId, NodeChordID)) {
-						System.out.println("true");
+					if(isSearchEndNode(target, node)) {
+						System.out.println("is end node 2nd case"); //debug
 						fillPathArray();
 					}
 				}
@@ -365,5 +368,17 @@ public class ChordProtocol implements EDProtocol {
         System.out.println(); //debug
         pathIndex++;
         currPath.clear();
+	}
+	
+	private boolean isSearchEndNode(BigInteger target, Node node) {
+		BigInteger predChordID = ((ChordProtocol) predecessor.getProtocol(p.pid)).chordId;
+		BigInteger thisChordID = ((ChordProtocol) node.getProtocol(p.pid)).chordId;
+		
+		if(idInab(target, predChordID, thisChordID)
+				|| (predChordID.compareTo(thisChordID) > 0
+				&& (predChordID.compareTo(target) < 0|| thisChordID.compareTo(target) > 0)))
+			return true;
+		return false;
+		
 	}
 }
