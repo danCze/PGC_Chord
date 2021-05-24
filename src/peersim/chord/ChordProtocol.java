@@ -86,7 +86,10 @@ public class ChordProtocol implements EDProtocol {
 			BigInteger target = message.getTarget();
 			Transport t = (Transport) node.getProtocol(p.tid);
 			Node n = message.getSender();
+			
+			BigInteger NodeChordID = ((ChordProtocol) node.getProtocol(pid)).chordId;
 			if (target == ((ChordProtocol) node.getProtocol(pid)).chordId) {
+			//if (target == NodeChordID || idInab(target, ((ChordProtocol) predecessor.getProtocol(pid)).chordId, NodeChordID)) {
 				// mandare mess di tipo final
 				//enviar mensagem final
 				t.send(node, n, new FinalMessage(message.getHopCounter()), pid);
@@ -120,6 +123,11 @@ public class ChordProtocol implements EDProtocol {
 					//dest is key's sucessor
 					currPath.add(((ChordProtocol) dest.getProtocol(pid)).chordId); //!= currPath.add(target);
 					//System.out.println(currPath.get(currPath.size() - 1) + " "); //debug
+					
+					if(idInab(target, ((ChordProtocol) predecessor.getProtocol(pid)).chordId, NodeChordID)) {
+						System.out.println("true");
+						fillPathArray();
+					}
 				}
 			}
 		}
