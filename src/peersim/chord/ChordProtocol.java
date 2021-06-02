@@ -90,21 +90,24 @@ public class ChordProtocol implements EDProtocol {
 			BigInteger thisChordID = ((ChordProtocol) node.getProtocol(pid)).chordId;
 			BigInteger predChordID = ((ChordProtocol) predecessor.getProtocol(pid)).chordId;
 			
-			//if (target == thisChordID) {
-			if (target == thisChordID || isSearchEndNode(target, node)) {
+			if (target == thisChordID) {
+			//if (isSearchEndNode(target, node)) {
 				// mandare mess di tipo final
 				//enviar mensagem final
 				t.send(node, n, new FinalMessage(message.getHopCounter()), pid);
 				
 				//target (key) is this node's ID
-		        currPath.add(target); //== currPath.add(((ChordProtocol) node.getProtocol(pid)).chordId);
+		        if(currPath.size() == 0) {
+					currPath.add(target); //== currPath.add(((ChordProtocol) node.getProtocol(pid)).chordId);
+				}
 		        
-		        //if key (ID) equals this node search is complete and so is peer's path array
-		        System.out.println("is end node 1st case"); //debug
+				//if key (ID) equals this node search is complete and so is peer's path array
+		        //System.out.println("is end node 1st case"); //debug
 		        fillPathArray();
 			}
-			if (target != ((ChordProtocol) node.getProtocol(pid)).chordId) {
-				// funzione lookup sulla fingertabable
+			//if (target != ((ChordProtocol) node.getProtocol(pid)).chordId) {
+			else {
+			// funzione lookup sulla fingertabable
 				// função de pesquisa na tabela do dedo
 				Node dest = find_successor(target);
 				if (dest.isUp() == false) {
@@ -120,6 +123,7 @@ public class ChordProtocol implements EDProtocol {
 						&& (target.compareTo(((ChordProtocol) dest
 								.getProtocol(p.pid)).chordId) < 0)) {
 					fails++;
+					//System.out.println("failed");
 				} else {
 					t.send(message.getSender(), dest, message, pid);
 					
@@ -127,10 +131,10 @@ public class ChordProtocol implements EDProtocol {
 					currPath.add(((ChordProtocol) dest.getProtocol(pid)).chordId); //!= currPath.add(target);
 					//System.out.println(currPath.get(currPath.size() - 1) + " "); //debug
 					
-					if(isSearchEndNode(target, node)) {
+					/*if(isSearchEndNode(target, node)) {
 						System.out.println("is end node 2nd case"); //debug
 						fillPathArray();
-					}
+					}*/
 				}
 			}
 		}
@@ -360,12 +364,12 @@ public class ChordProtocol implements EDProtocol {
 
 	private void fillPathArray() {
 		path[pathIndex] = new ArrayList<BigInteger>();
-        System.out.println("PI " + pathIndex); //debug
+        //System.out.println("PI " + pathIndex); //debug
         for(int i = 0; i < currPath.size(); i++) {
         	path[pathIndex].add(currPath.get(i));
-        	System.out.print(path[pathIndex].get(i) + " "); //debug
+        	//System.out.print(path[pathIndex].get(i) + " "); //debug
         }
-        System.out.println(); //debug
+        //System.out.println(); //debug
         pathIndex++;
         currPath.clear();
 	}
@@ -374,7 +378,8 @@ public class ChordProtocol implements EDProtocol {
 		BigInteger predChordID = ((ChordProtocol) predecessor.getProtocol(p.pid)).chordId;
 		BigInteger thisChordID = ((ChordProtocol) node.getProtocol(p.pid)).chordId;
 		
-		if(idInab(target, predChordID, thisChordID)
+		if(target.compareTo(thisChordID) == 0
+				|| idInab(target, predChordID, thisChordID)
 				|| (predChordID.compareTo(thisChordID) > 0
 				&& (predChordID.compareTo(target) < 0|| thisChordID.compareTo(target) > 0)))
 			return true;
