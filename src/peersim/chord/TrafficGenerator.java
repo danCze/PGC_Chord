@@ -105,9 +105,11 @@ public class TrafficGenerator implements Control {
 						reversePath[i] = new HashMap<BigInteger, Integer>();
 					}
 				    for(int i = 0; i < max; i++) {
+				    	int counter = 0;
 				    	for(int j = 0; j < size; j++) {
 							int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
 							if(currPeerIdx >= 0) {
+								counter++;
 								BigInteger peer = ChordProtocol.path[j].get(currPeerIdx);
 								if(reversePath[i].containsKey(peer)) {
 									int currTimes = reversePath[i].get(peer);
@@ -118,6 +120,7 @@ public class TrafficGenerator implements Control {
 								}
 							}
 				    	}
+				    	myWriter.write("peer " + i + ": " + counter + "\n");
 					}
 				    for(int i = 0; i < max; i++) {
 						myWriter.write("peer: " + i + "\n");
