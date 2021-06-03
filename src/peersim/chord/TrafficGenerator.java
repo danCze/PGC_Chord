@@ -120,7 +120,7 @@ public class TrafficGenerator implements Control {
 								}
 							}
 				    	}
-				    	myWriter.write("hop " + i + "total peers in hop: " + counter + " # of different peers in hop: " + reversePath[i].size() + "\n");
+				    	myWriter.write("hop " + i + ":\n\ttotal peers in hop: " + counter + "\n\t# of different peers in hop: " + reversePath[i].size() + "\n");
 					}
 				    for(int i = 0; i < max; i++) {
 						myWriter.write("hop: " + i + "\n");

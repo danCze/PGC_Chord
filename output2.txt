@@ -1,267 +1,795 @@
-hop 0total peers in hop: 1000 # of different peers in hop: 33
-hop 1total peers in hop: 705 # of different peers in hop: 63
-hop 2total peers in hop: 539 # of different peers in hop: 89
-hop 3total peers in hop: 406 # of different peers in hop: 96
-hop 4total peers in hop: 281 # of different peers in hop: 97
-hop 5total peers in hop: 199 # of different peers in hop: 88
-hop 6total peers in hop: 150 # of different peers in hop: 68
-hop 7total peers in hop: 123 # of different peers in hop: 61
-hop 8total peers in hop: 96 # of different peers in hop: 57
-hop 9total peers in hop: 76 # of different peers in hop: 49
-hop 10total peers in hop: 60 # of different peers in hop: 39
-hop 11total peers in hop: 43 # of different peers in hop: 33
-hop 12total peers in hop: 33 # of different peers in hop: 27
-hop 13total peers in hop: 32 # of different peers in hop: 25
-hop 14total peers in hop: 28 # of different peers in hop: 20
-hop 15total peers in hop: 23 # of different peers in hop: 17
-hop 16total peers in hop: 20 # of different peers in hop: 19
-hop 17total peers in hop: 19 # of different peers in hop: 17
-hop 18total peers in hop: 15 # of different peers in hop: 13
-hop 19total peers in hop: 14 # of different peers in hop: 13
-hop 20total peers in hop: 12 # of different peers in hop: 11
-hop 21total peers in hop: 11 # of different peers in hop: 11
-hop 22total peers in hop: 10 # of different peers in hop: 10
-hop 23total peers in hop: 8 # of different peers in hop: 8
-hop 24total peers in hop: 8 # of different peers in hop: 8
-hop 25total peers in hop: 8 # of different peers in hop: 8
-hop 26total peers in hop: 8 # of different peers in hop: 8
-hop 27total peers in hop: 7 # of different peers in hop: 6
-hop 28total peers in hop: 7 # of different peers in hop: 5
-hop 29total peers in hop: 7 # of different peers in hop: 7
-hop 30total peers in hop: 7 # of different peers in hop: 7
-hop 31total peers in hop: 6 # of different peers in hop: 4
-hop 32total peers in hop: 5 # of different peers in hop: 5
-hop 33total peers in hop: 5 # of different peers in hop: 5
-hop 34total peers in hop: 5 # of different peers in hop: 4
-hop 35total peers in hop: 5 # of different peers in hop: 5
-hop 36total peers in hop: 5 # of different peers in hop: 4
-hop 37total peers in hop: 5 # of different peers in hop: 5
-hop 38total peers in hop: 5 # of different peers in hop: 5
-hop 39total peers in hop: 5 # of different peers in hop: 5
-hop 40total peers in hop: 5 # of different peers in hop: 5
-hop 41total peers in hop: 5 # of different peers in hop: 5
-hop 42total peers in hop: 5 # of different peers in hop: 5
-hop 43total peers in hop: 5 # of different peers in hop: 5
-hop 44total peers in hop: 5 # of different peers in hop: 5
-hop 45total peers in hop: 5 # of different peers in hop: 5
-hop 46total peers in hop: 5 # of different peers in hop: 5
-hop 47total peers in hop: 5 # of different peers in hop: 5
-hop 48total peers in hop: 5 # of different peers in hop: 5
-hop 49total peers in hop: 5 # of different peers in hop: 5
-hop 50total peers in hop: 5 # of different peers in hop: 5
-hop 51total peers in hop: 4 # of different peers in hop: 4
-hop 52total peers in hop: 4 # of different peers in hop: 4
-hop 53total peers in hop: 4 # of different peers in hop: 3
-hop 54total peers in hop: 4 # of different peers in hop: 4
-hop 55total peers in hop: 4 # of different peers in hop: 4
-hop 56total peers in hop: 4 # of different peers in hop: 4
-hop 57total peers in hop: 4 # of different peers in hop: 4
-hop 58total peers in hop: 4 # of different peers in hop: 4
-hop 59total peers in hop: 4 # of different peers in hop: 3
-hop 60total peers in hop: 4 # of different peers in hop: 4
-hop 61total peers in hop: 4 # of different peers in hop: 4
-hop 62total peers in hop: 4 # of different peers in hop: 4
-hop 63total peers in hop: 4 # of different peers in hop: 4
-hop 64total peers in hop: 4 # of different peers in hop: 4
-hop 65total peers in hop: 4 # of different peers in hop: 4
-hop 66total peers in hop: 4 # of different peers in hop: 4
-hop 67total peers in hop: 4 # of different peers in hop: 4
-hop 68total peers in hop: 4 # of different peers in hop: 4
-hop 69total peers in hop: 4 # of different peers in hop: 3
-hop 70total peers in hop: 4 # of different peers in hop: 4
-hop 71total peers in hop: 4 # of different peers in hop: 4
-hop 72total peers in hop: 4 # of different peers in hop: 4
-hop 73total peers in hop: 4 # of different peers in hop: 4
-hop 74total peers in hop: 3 # of different peers in hop: 3
-hop 75total peers in hop: 3 # of different peers in hop: 3
-hop 76total peers in hop: 3 # of different peers in hop: 3
-hop 77total peers in hop: 3 # of different peers in hop: 3
-hop 78total peers in hop: 3 # of different peers in hop: 3
-hop 79total peers in hop: 3 # of different peers in hop: 3
-hop 80total peers in hop: 3 # of different peers in hop: 3
-hop 81total peers in hop: 3 # of different peers in hop: 3
-hop 82total peers in hop: 3 # of different peers in hop: 3
-hop 83total peers in hop: 3 # of different peers in hop: 3
-hop 84total peers in hop: 3 # of different peers in hop: 3
-hop 85total peers in hop: 3 # of different peers in hop: 3
-hop 86total peers in hop: 3 # of different peers in hop: 3
-hop 87total peers in hop: 3 # of different peers in hop: 3
-hop 88total peers in hop: 2 # of different peers in hop: 2
-hop 89total peers in hop: 2 # of different peers in hop: 2
-hop 90total peers in hop: 2 # of different peers in hop: 2
-hop 91total peers in hop: 2 # of different peers in hop: 2
-hop 92total peers in hop: 2 # of different peers in hop: 2
-hop 93total peers in hop: 2 # of different peers in hop: 2
-hop 94total peers in hop: 2 # of different peers in hop: 2
-hop 95total peers in hop: 2 # of different peers in hop: 2
-hop 96total peers in hop: 2 # of different peers in hop: 2
-hop 97total peers in hop: 2 # of different peers in hop: 2
-hop 98total peers in hop: 1 # of different peers in hop: 1
-hop 99total peers in hop: 1 # of different peers in hop: 1
-hop 100total peers in hop: 1 # of different peers in hop: 1
-hop 101total peers in hop: 1 # of different peers in hop: 1
-hop 102total peers in hop: 1 # of different peers in hop: 1
-hop 103total peers in hop: 1 # of different peers in hop: 1
-hop 104total peers in hop: 1 # of different peers in hop: 1
-hop 105total peers in hop: 1 # of different peers in hop: 1
-hop 106total peers in hop: 1 # of different peers in hop: 1
-hop 107total peers in hop: 1 # of different peers in hop: 1
-hop 108total peers in hop: 1 # of different peers in hop: 1
-hop 109total peers in hop: 1 # of different peers in hop: 1
-hop 110total peers in hop: 1 # of different peers in hop: 1
-hop 111total peers in hop: 1 # of different peers in hop: 1
-hop 112total peers in hop: 1 # of different peers in hop: 1
-hop 113total peers in hop: 1 # of different peers in hop: 1
-hop 114total peers in hop: 1 # of different peers in hop: 1
-hop 115total peers in hop: 1 # of different peers in hop: 1
-hop 116total peers in hop: 1 # of different peers in hop: 1
-hop 117total peers in hop: 1 # of different peers in hop: 1
-hop 118total peers in hop: 1 # of different peers in hop: 1
-hop 119total peers in hop: 1 # of different peers in hop: 1
-hop 120total peers in hop: 1 # of different peers in hop: 1
-hop 121total peers in hop: 1 # of different peers in hop: 1
-hop 122total peers in hop: 1 # of different peers in hop: 1
-hop 123total peers in hop: 1 # of different peers in hop: 1
-hop 124total peers in hop: 1 # of different peers in hop: 1
-hop 125total peers in hop: 1 # of different peers in hop: 1
-hop 126total peers in hop: 1 # of different peers in hop: 1
-hop 127total peers in hop: 1 # of different peers in hop: 1
-hop 128total peers in hop: 1 # of different peers in hop: 1
-hop 129total peers in hop: 1 # of different peers in hop: 1
-hop 130total peers in hop: 1 # of different peers in hop: 1
-hop 131total peers in hop: 1 # of different peers in hop: 1
-hop 132total peers in hop: 1 # of different peers in hop: 1
-hop 133total peers in hop: 1 # of different peers in hop: 1
-hop 134total peers in hop: 1 # of different peers in hop: 1
-hop 135total peers in hop: 1 # of different peers in hop: 1
-hop 136total peers in hop: 1 # of different peers in hop: 1
-hop 137total peers in hop: 1 # of different peers in hop: 1
-hop 138total peers in hop: 1 # of different peers in hop: 1
-hop 139total peers in hop: 1 # of different peers in hop: 1
-hop 140total peers in hop: 1 # of different peers in hop: 1
-hop 141total peers in hop: 1 # of different peers in hop: 1
-hop 142total peers in hop: 1 # of different peers in hop: 1
-hop 143total peers in hop: 1 # of different peers in hop: 1
-hop 144total peers in hop: 1 # of different peers in hop: 1
-hop 145total peers in hop: 1 # of different peers in hop: 1
-hop 146total peers in hop: 1 # of different peers in hop: 1
-hop 147total peers in hop: 1 # of different peers in hop: 1
-hop 148total peers in hop: 1 # of different peers in hop: 1
-hop 149total peers in hop: 1 # of different peers in hop: 1
-hop 150total peers in hop: 1 # of different peers in hop: 1
-hop 151total peers in hop: 1 # of different peers in hop: 1
-hop 152total peers in hop: 1 # of different peers in hop: 1
-hop 153total peers in hop: 1 # of different peers in hop: 1
-hop 154total peers in hop: 1 # of different peers in hop: 1
-hop 155total peers in hop: 1 # of different peers in hop: 1
-hop 156total peers in hop: 1 # of different peers in hop: 1
-hop 157total peers in hop: 1 # of different peers in hop: 1
-hop 158total peers in hop: 1 # of different peers in hop: 1
-hop 159total peers in hop: 1 # of different peers in hop: 1
-hop 160total peers in hop: 1 # of different peers in hop: 1
-hop 161total peers in hop: 1 # of different peers in hop: 1
-hop 162total peers in hop: 1 # of different peers in hop: 1
-hop 163total peers in hop: 1 # of different peers in hop: 1
-hop 164total peers in hop: 1 # of different peers in hop: 1
-hop 165total peers in hop: 1 # of different peers in hop: 1
-hop 166total peers in hop: 1 # of different peers in hop: 1
-hop 167total peers in hop: 1 # of different peers in hop: 1
-hop 168total peers in hop: 1 # of different peers in hop: 1
-hop 169total peers in hop: 1 # of different peers in hop: 1
-hop 170total peers in hop: 1 # of different peers in hop: 1
-hop 171total peers in hop: 1 # of different peers in hop: 1
-hop 172total peers in hop: 1 # of different peers in hop: 1
-hop 173total peers in hop: 1 # of different peers in hop: 1
-hop 174total peers in hop: 1 # of different peers in hop: 1
-hop 175total peers in hop: 1 # of different peers in hop: 1
-hop 176total peers in hop: 1 # of different peers in hop: 1
-hop 177total peers in hop: 1 # of different peers in hop: 1
-hop 178total peers in hop: 1 # of different peers in hop: 1
-hop 179total peers in hop: 1 # of different peers in hop: 1
-hop 180total peers in hop: 1 # of different peers in hop: 1
-hop 181total peers in hop: 1 # of different peers in hop: 1
-hop 182total peers in hop: 1 # of different peers in hop: 1
-hop 183total peers in hop: 1 # of different peers in hop: 1
-hop 184total peers in hop: 1 # of different peers in hop: 1
-hop 185total peers in hop: 1 # of different peers in hop: 1
-hop 186total peers in hop: 1 # of different peers in hop: 1
-hop 187total peers in hop: 1 # of different peers in hop: 1
-hop 188total peers in hop: 1 # of different peers in hop: 1
-hop 189total peers in hop: 1 # of different peers in hop: 1
-hop 190total peers in hop: 1 # of different peers in hop: 1
-hop 191total peers in hop: 1 # of different peers in hop: 1
-hop 192total peers in hop: 1 # of different peers in hop: 1
-hop 193total peers in hop: 1 # of different peers in hop: 1
-hop 194total peers in hop: 1 # of different peers in hop: 1
-hop 195total peers in hop: 1 # of different peers in hop: 1
-hop 196total peers in hop: 1 # of different peers in hop: 1
-hop 197total peers in hop: 1 # of different peers in hop: 1
-hop 198total peers in hop: 1 # of different peers in hop: 1
-hop 199total peers in hop: 1 # of different peers in hop: 1
-hop 200total peers in hop: 1 # of different peers in hop: 1
-hop 201total peers in hop: 1 # of different peers in hop: 1
-hop 202total peers in hop: 1 # of different peers in hop: 1
-hop 203total peers in hop: 1 # of different peers in hop: 1
-hop 204total peers in hop: 1 # of different peers in hop: 1
-hop 205total peers in hop: 1 # of different peers in hop: 1
-hop 206total peers in hop: 1 # of different peers in hop: 1
-hop 207total peers in hop: 1 # of different peers in hop: 1
-hop 208total peers in hop: 1 # of different peers in hop: 1
-hop 209total peers in hop: 1 # of different peers in hop: 1
-hop 210total peers in hop: 1 # of different peers in hop: 1
-hop 211total peers in hop: 1 # of different peers in hop: 1
-hop 212total peers in hop: 1 # of different peers in hop: 1
-hop 213total peers in hop: 1 # of different peers in hop: 1
-hop 214total peers in hop: 1 # of different peers in hop: 1
-hop 215total peers in hop: 1 # of different peers in hop: 1
-hop 216total peers in hop: 1 # of different peers in hop: 1
-hop 217total peers in hop: 1 # of different peers in hop: 1
-hop 218total peers in hop: 1 # of different peers in hop: 1
-hop 219total peers in hop: 1 # of different peers in hop: 1
-hop 220total peers in hop: 1 # of different peers in hop: 1
-hop 221total peers in hop: 1 # of different peers in hop: 1
-hop 222total peers in hop: 1 # of different peers in hop: 1
-hop 223total peers in hop: 1 # of different peers in hop: 1
-hop 224total peers in hop: 1 # of different peers in hop: 1
-hop 225total peers in hop: 1 # of different peers in hop: 1
-hop 226total peers in hop: 1 # of different peers in hop: 1
-hop 227total peers in hop: 1 # of different peers in hop: 1
-hop 228total peers in hop: 1 # of different peers in hop: 1
-hop 229total peers in hop: 1 # of different peers in hop: 1
-hop 230total peers in hop: 1 # of different peers in hop: 1
-hop 231total peers in hop: 1 # of different peers in hop: 1
-hop 232total peers in hop: 1 # of different peers in hop: 1
-hop 233total peers in hop: 1 # of different peers in hop: 1
-hop 234total peers in hop: 1 # of different peers in hop: 1
-hop 235total peers in hop: 1 # of different peers in hop: 1
-hop 236total peers in hop: 1 # of different peers in hop: 1
-hop 237total peers in hop: 1 # of different peers in hop: 1
-hop 238total peers in hop: 1 # of different peers in hop: 1
-hop 239total peers in hop: 1 # of different peers in hop: 1
-hop 240total peers in hop: 1 # of different peers in hop: 1
-hop 241total peers in hop: 1 # of different peers in hop: 1
-hop 242total peers in hop: 1 # of different peers in hop: 1
-hop 243total peers in hop: 1 # of different peers in hop: 1
-hop 244total peers in hop: 1 # of different peers in hop: 1
-hop 245total peers in hop: 1 # of different peers in hop: 1
-hop 246total peers in hop: 1 # of different peers in hop: 1
-hop 247total peers in hop: 1 # of different peers in hop: 1
-hop 248total peers in hop: 1 # of different peers in hop: 1
-hop 249total peers in hop: 1 # of different peers in hop: 1
-hop 250total peers in hop: 1 # of different peers in hop: 1
-hop 251total peers in hop: 1 # of different peers in hop: 1
-hop 252total peers in hop: 1 # of different peers in hop: 1
-hop 253total peers in hop: 1 # of different peers in hop: 1
-hop 254total peers in hop: 1 # of different peers in hop: 1
-hop 255total peers in hop: 1 # of different peers in hop: 1
-hop 256total peers in hop: 1 # of different peers in hop: 1
-hop 257total peers in hop: 1 # of different peers in hop: 1
-hop 258total peers in hop: 1 # of different peers in hop: 1
-hop 259total peers in hop: 1 # of different peers in hop: 1
-hop 260total peers in hop: 1 # of different peers in hop: 1
-hop 261total peers in hop: 1 # of different peers in hop: 1
-hop 262total peers in hop: 1 # of different peers in hop: 1
-hop 263total peers in hop: 1 # of different peers in hop: 1
+hop 0:
+	total peers in hop: 1000
+	# of different peers in hop: 33
+hop 1:
+	total peers in hop: 705
+	# of different peers in hop: 63
+hop 2:
+	total peers in hop: 539
+	# of different peers in hop: 89
+hop 3:
+	total peers in hop: 406
+	# of different peers in hop: 96
+hop 4:
+	total peers in hop: 281
+	# of different peers in hop: 97
+hop 5:
+	total peers in hop: 199
+	# of different peers in hop: 88
+hop 6:
+	total peers in hop: 150
+	# of different peers in hop: 68
+hop 7:
+	total peers in hop: 123
+	# of different peers in hop: 61
+hop 8:
+	total peers in hop: 96
+	# of different peers in hop: 57
+hop 9:
+	total peers in hop: 76
+	# of different peers in hop: 49
+hop 10:
+	total peers in hop: 60
+	# of different peers in hop: 39
+hop 11:
+	total peers in hop: 43
+	# of different peers in hop: 33
+hop 12:
+	total peers in hop: 33
+	# of different peers in hop: 27
+hop 13:
+	total peers in hop: 32
+	# of different peers in hop: 25
+hop 14:
+	total peers in hop: 28
+	# of different peers in hop: 20
+hop 15:
+	total peers in hop: 23
+	# of different peers in hop: 17
+hop 16:
+	total peers in hop: 20
+	# of different peers in hop: 19
+hop 17:
+	total peers in hop: 19
+	# of different peers in hop: 17
+hop 18:
+	total peers in hop: 15
+	# of different peers in hop: 13
+hop 19:
+	total peers in hop: 14
+	# of different peers in hop: 13
+hop 20:
+	total peers in hop: 12
+	# of different peers in hop: 11
+hop 21:
+	total peers in hop: 11
+	# of different peers in hop: 11
+hop 22:
+	total peers in hop: 10
+	# of different peers in hop: 10
+hop 23:
+	total peers in hop: 8
+	# of different peers in hop: 8
+hop 24:
+	total peers in hop: 8
+	# of different peers in hop: 8
+hop 25:
+	total peers in hop: 8
+	# of different peers in hop: 8
+hop 26:
+	total peers in hop: 8
+	# of different peers in hop: 8
+hop 27:
+	total peers in hop: 7
+	# of different peers in hop: 6
+hop 28:
+	total peers in hop: 7
+	# of different peers in hop: 5
+hop 29:
+	total peers in hop: 7
+	# of different peers in hop: 7
+hop 30:
+	total peers in hop: 7
+	# of different peers in hop: 7
+hop 31:
+	total peers in hop: 6
+	# of different peers in hop: 4
+hop 32:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 33:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 34:
+	total peers in hop: 5
+	# of different peers in hop: 4
+hop 35:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 36:
+	total peers in hop: 5
+	# of different peers in hop: 4
+hop 37:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 38:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 39:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 40:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 41:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 42:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 43:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 44:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 45:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 46:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 47:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 48:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 49:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 50:
+	total peers in hop: 5
+	# of different peers in hop: 5
+hop 51:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 52:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 53:
+	total peers in hop: 4
+	# of different peers in hop: 3
+hop 54:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 55:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 56:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 57:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 58:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 59:
+	total peers in hop: 4
+	# of different peers in hop: 3
+hop 60:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 61:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 62:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 63:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 64:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 65:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 66:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 67:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 68:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 69:
+	total peers in hop: 4
+	# of different peers in hop: 3
+hop 70:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 71:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 72:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 73:
+	total peers in hop: 4
+	# of different peers in hop: 4
+hop 74:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 75:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 76:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 77:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 78:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 79:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 80:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 81:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 82:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 83:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 84:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 85:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 86:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 87:
+	total peers in hop: 3
+	# of different peers in hop: 3
+hop 88:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 89:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 90:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 91:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 92:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 93:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 94:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 95:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 96:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 97:
+	total peers in hop: 2
+	# of different peers in hop: 2
+hop 98:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 99:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 100:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 101:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 102:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 103:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 104:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 105:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 106:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 107:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 108:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 109:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 110:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 111:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 112:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 113:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 114:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 115:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 116:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 117:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 118:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 119:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 120:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 121:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 122:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 123:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 124:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 125:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 126:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 127:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 128:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 129:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 130:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 131:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 132:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 133:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 134:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 135:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 136:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 137:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 138:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 139:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 140:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 141:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 142:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 143:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 144:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 145:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 146:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 147:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 148:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 149:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 150:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 151:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 152:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 153:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 154:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 155:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 156:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 157:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 158:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 159:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 160:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 161:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 162:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 163:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 164:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 165:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 166:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 167:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 168:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 169:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 170:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 171:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 172:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 173:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 174:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 175:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 176:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 177:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 178:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 179:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 180:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 181:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 182:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 183:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 184:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 185:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 186:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 187:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 188:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 189:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 190:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 191:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 192:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 193:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 194:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 195:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 196:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 197:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 198:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 199:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 200:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 201:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 202:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 203:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 204:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 205:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 206:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 207:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 208:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 209:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 210:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 211:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 212:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 213:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 214:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 215:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 216:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 217:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 218:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 219:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 220:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 221:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 222:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 223:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 224:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 225:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 226:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 227:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 228:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 229:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 230:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 231:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 232:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 233:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 234:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 235:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 236:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 237:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 238:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 239:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 240:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 241:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 242:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 243:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 244:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 245:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 246:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 247:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 248:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 249:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 250:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 251:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 252:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 253:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 254:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 255:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 256:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 257:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 258:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 259:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 260:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 261:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 262:
+	total peers in hop: 1
+	# of different peers in hop: 1
+hop 263:
+	total peers in hop: 1
+	# of different peers in hop: 1
 hop: 0
 273383653002941193146603695657710555547 4
 262854383198538080272003986000575440383 2
@@ -1891,66 +2419,4 @@ hop: 154
 245429602906507725941639314308906873070 1
 
 hop: 155
-198557328682055246452740169185257131270 1
-
-hop: 156
-175936832376595324436040172379598056686 1
-
-hop: 157
-194783294000976469829669484099194067120 1
-
-hop: 158
-128923046269081767516732144148283850829 1
-
-hop: 159
-269951269897550199386522097640759412667 1
-
-hop: 160
-161477194545399745878500928651706410867 1
-
-hop: 161
-124071572236235167888329451370144895186 1
-
-hop: 162
-275399383583277946401124727801504989324 1
-
-hop: 163
-222374233657350655941318360543872961757 1
-
-hop: 164
-228217266986650864364642969516399679979 1
-
-hop: 165
-269951269897550199386522097640759412667 1
-
-hop: 166
-273383653002941193146603695657710555547 1
-
-hop: 167
-204640554283344543478742522358863612689 1
-
-hop: 168
-211494714301263370622652507757401172304 1
-
-hop: 169
-180455184927682139013521508614833749448 1
-
-hop: 170
-214202027143521121711676610230308205880 1
-
-hop: 171
-214202027143521121711676610230308205880 1
-
-hop: 172
-264763193306132157993296360069566760529 1
-
-hop: 173
-115007448550070807945808379020417327262 1
-
-hop: 174
-265644350154552052445278875542483517690 1
-
-hop: 175
-150955714481113339596176650008093509498 1
-
-hop: 17
+1985573286820552464527401691852571
