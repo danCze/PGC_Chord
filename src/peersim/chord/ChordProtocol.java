@@ -54,9 +54,9 @@ public class ChordProtocol implements EDProtocol {
 	
 	public static ArrayList<BigInteger>[] path = new ArrayList[size];
 	
-	public static int pathIndex = 0;
+	//public static int pathIndex = 0;
 	
-	public static ArrayList<BigInteger> currPath = new ArrayList();
+	//public static ArrayList<BigInteger> currPath = new ArrayList();
 
 	/**
 	 * 
@@ -94,16 +94,19 @@ public class ChordProtocol implements EDProtocol {
 			//if (isSearchEndNode(target, node)) {
 				// mandare mess di tipo final
 				//enviar mensagem final
+				ArrayList<BigInteger> messagePath = message.getPath();
+				messagePath.add(thisChordID);
 				t.send(node, n, new FinalMessage(message.getHopCounter()), pid);
 				
 				//target (key) is this node's ID
-		        if(currPath.size() == 0) {
-					currPath.add(target); //== currPath.add(((ChordProtocol) node.getProtocol(pid)).chordId);
-				}
+		        //if(currPath.size() == 0) {
+					//currPath.add(target); //== currPath.add(((ChordProtocol) node.getProtocol(pid)).chordId);
+				//path[message.getIndex()].add(target);
+				//}
 		        
 				//if key (ID) equals this node search is complete and so is peer's path array
 		        //System.out.println("is end node 1st case"); //debug
-		        fillPathArray();
+		        fillPathArray(message.getIndex(), message.getPath());
 			}
 			//if (target != ((ChordProtocol) node.getProtocol(pid)).chordId) {
 			else {
@@ -125,10 +128,14 @@ public class ChordProtocol implements EDProtocol {
 					fails++;
 					//System.out.println("failed");
 				} else {
+					ArrayList<BigInteger> messagePath = message.getPath();
+					messagePath.add(thisChordID);
 					t.send(message.getSender(), dest, message, pid);
 					
 					//dest is key's sucessor
-					currPath.add(((ChordProtocol) dest.getProtocol(pid)).chordId); //!= currPath.add(target);
+					//currPath.add(((ChordProtocol) dest.getProtocol(pid)).chordId); //!= currPath.add(target);
+					//currPath.add(thisChordID);
+					//path[message.getIndex()].add(target);
 					//System.out.println(currPath.get(currPath.size() - 1) + " "); //debug
 					
 					/*if(isSearchEndNode(target, node)) {
@@ -362,7 +369,7 @@ public class ChordProtocol implements EDProtocol {
 		this.lookupMessage = new int[0];
 	}
 
-	private void fillPathArray() {
+	/*private void fillPathArray() {
 		path[pathIndex] = new ArrayList<BigInteger>();
         //System.out.println("PI " + pathIndex); //debug
         for(int i = 0; i < currPath.size(); i++) {
@@ -372,9 +379,20 @@ public class ChordProtocol implements EDProtocol {
         //System.out.println(); //debug
         pathIndex++;
         currPath.clear();
+	}*/
+	
+	private void fillPathArray(int index, ArrayList<BigInteger> messagePath) {
+		path[index] = new ArrayList<BigInteger>();
+	    //System.out.println("PI " + pathIndex); //debug
+	    for(int i = 0; i < messagePath.size(); i++) {
+	    	path[index].add(messagePath.get(i));
+	    	//System.out.print(path[pathIndex].get(i) + " "); //debug
+	    }
+	    //System.out.println(); //debug
+	    return;
 	}
 	
-	private boolean isSearchEndNode(BigInteger target, Node node) {
+	/*private boolean isSearchEndNode(BigInteger target, Node node) {
 		BigInteger predChordID = ((ChordProtocol) predecessor.getProtocol(p.pid)).chordId;
 		BigInteger thisChordID = ((ChordProtocol) node.getProtocol(p.pid)).chordId;
 		
@@ -385,5 +403,5 @@ public class ChordProtocol implements EDProtocol {
 			return true;
 		return false;
 		
-	}
+	}*/
 }

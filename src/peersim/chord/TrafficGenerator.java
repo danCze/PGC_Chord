@@ -31,7 +31,9 @@ public class TrafficGenerator implements Control {
 	
 	private boolean executou = false; //int executou = 0;
 	
-	private boolean transferido = false;
+	private boolean transferido1 = false;
+	
+	private boolean transferido2 = false;
 
 	/**
 	 * 
@@ -60,23 +62,23 @@ public class TrafficGenerator implements Control {
 			for(int i = 0; i < Network.size(); i++) {
 				do {
 					//i++;
-					sender = Network.get(CommonState.r.nextInt(size));
+					//sender = Network.get(CommonState.r.nextInt(size));
+					sender = Network.get(i);
 					//target = Network.get(CommonState.r.nextInt(size));
 				} while (sender == null || sender.isUp() == false);
 				LookUpMessage message = new LookUpMessage(sender,
-						((ChordProtocol) target.getProtocol(pid)).chordId);
+						((ChordProtocol) target.getProtocol(pid)).chordId, i);
 				EDSimulator.add(10, message, sender, pid);
 			}
 			return false;
 		}
 		else {
-			if(!transferido) {
-				transferido = true;
+			//partial output - paths
+			if(!transferido1) {
+				transferido1 = true;
 				
 				try {
 					int size = ChordProtocol.path.length;
-					
-					//partial output - paths
 					String filename = "output1.txt";
 					FileWriter myWriter = new FileWriter(filename);
 					
@@ -87,12 +89,22 @@ public class TrafficGenerator implements Control {
 						}
 						myWriter.write("\n");
 					}
+					myWriter.write("The file was written until the end.\n");
 					myWriter.close();
 				    System.out.println("Successfully wrote to the file 1.");
-				
-				    //processing and final(?) output - convergence
-				    filename = "output2.txt";
-				    myWriter = new FileWriter(filename);
+				}
+				catch(IOException e) {
+					System.out.println("An error occurred.");
+				    e.printStackTrace();
+				}
+			}
+			//processing and final(?) output - convergence
+			if(!transferido2) {
+				transferido2 = true;
+				try {
+					int size = ChordProtocol.path.length;
+					String filename = "output2.txt";
+					FileWriter myWriter = new FileWriter(filename);
 				    
 				    int max = 0;
 				    for(int i = 0; i < size; i++) {
@@ -127,11 +139,14 @@ public class TrafficGenerator implements Control {
 						//for(int j = 0; j < reversePath[i].size(); j++) {
 						//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
 						//}
+						//https://stackabuse.com/java-how-to-get-keys-and-values-from-a-map
 						for (HashMap.Entry<BigInteger, Integer> pair : reversePath[i].entrySet()) {
 							myWriter.write(String.format("%s %s\n", pair.getKey(), pair.getValue()));
 						}
 						myWriter.write("\n");
 					}
+					myWriter.write("The file was written until the end.\n");
+				    myWriter.close();
 				    System.out.println("Successfully wrote to the file 2.");
 				}
 				catch(IOException e) {
