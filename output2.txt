@@ -1,29 +1,29 @@
 hop 0:
-	total peers in hop: 1000
+	total peers that pass through hop: 1000
 	# of different peers in hop: 1
 hop 1:
-	total peers in hop: 999
+	total peers that pass through hop: 999
 	# of different peers in hop: 18
 hop 2:
-	total peers in hop: 981
+	total peers that pass through hop: 981
 	# of different peers in hop: 85
 hop 3:
-	total peers in hop: 896
+	total peers that pass through hop: 896
 	# of different peers in hop: 197
 hop 4:
-	total peers in hop: 699
+	total peers that pass through hop: 699
 	# of different peers in hop: 230
 hop 5:
-	total peers in hop: 469
+	total peers that pass through hop: 469
 	# of different peers in hop: 259
 hop 6:
-	total peers in hop: 210
+	total peers that pass through hop: 210
 	# of different peers in hop: 153
 hop 7:
-	total peers in hop: 57
+	total peers that pass through hop: 57
 	# of different peers in hop: 52
 hop 8:
-	total peers in hop: 5
+	total peers that pass through hop: 5
 	# of different peers in hop: 5
 hop: 0
 280969005741530084941391480066731809771 1000
