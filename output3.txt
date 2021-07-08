@@ -1,30 +1,31 @@
 hop 0:
-	total peers that pass through hop: 999
-	# of different peers in hop: 1
+	total peers that pass through hop (excluding self): 999
+	# of different peers in hop that are intermediate: 1
 hop 1:
-	total peers that pass through hop: 981
-	# of different peers in hop: 18
+	total peers that pass through hop (excluding self): 981
+	# of different peers in hop that are intermediate: 12
 hop 2:
-	total peers that pass through hop: 896
-	# of different peers in hop: 85
+	total peers that pass through hop (excluding self): 896
+	# of different peers in hop that are intermediate: 46
 hop 3:
-	total peers that pass through hop: 699
-	# of different peers in hop: 197
+	total peers that pass through hop (excluding self): 699
+	# of different peers in hop that are intermediate: 71
 hop 4:
-	total peers that pass through hop: 469
-	# of different peers in hop: 230
+	total peers that pass through hop (excluding self): 469
+	# of different peers in hop that are intermediate: 77
 hop 5:
-	total peers that pass through hop: 210
-	# of different peers in hop: 259
+	total peers that pass through hop (excluding self): 210
+	# of different peers in hop that are intermediate: 61
 hop 6:
-	total peers that pass through hop: 57
-	# of different peers in hop: 153
+	total peers that pass through hop (excluding self): 57
+	# of different peers in hop that are intermediate: 24
 hop 7:
-	total peers that pass through hop: 5
-	# of different peers in hop: 52
+	total peers that pass through hop (excluding self): 5
+	# of different peers in hop that are intermediate: 4
 hop 8:
-	total peers that pass through hop: 0
-	# of different peers in hop: 5
+	total peers that pass through hop (excluding self): 0
+	# of different peers in hop that are intermediate: 0
+
 hop: 0
 280969005741530084941391480066731809771 999
 
@@ -336,7 +337,5 @@ hop: 7
 118515267534111631098162600738677614045 1
 119079697937326569825320284661159526220 1
 122597069647430696731419173965743860527 1
-
-hop: 8
 
 The file was written until the end.

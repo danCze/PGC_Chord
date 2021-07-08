@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 import peersim.core.*;
 import peersim.config.Configuration;
@@ -33,6 +35,7 @@ public class TrafficGenerator implements Control {
 	private boolean transferido1 = false;
 	private boolean transferido2 = false;
 	private boolean transferido3 = false;
+	private boolean transferido4 = false;
 
 	/**
 	 * 
@@ -131,8 +134,9 @@ public class TrafficGenerator implements Control {
 								}
 							}
 				    	}
-				    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop: " + counter + "\n\t# of different peers in hop: " + reversePath[i].size() + "\n");
+				    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop (including self): " + counter + "\n\t# of different peers in hop: " + reversePath[i].size() + "\n");
 					}
+				    myWriter.write("\n");
 				    for(int i = 0; i < max; i++) {
 						myWriter.write("hop: " + i + "\n");
 						//for(int j = 0; j < reversePath[i].size(); j++) {
@@ -187,9 +191,16 @@ public class TrafficGenerator implements Control {
 								}
 							}
 				    	}
-				    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop: " + (counter - reversePath[i].size()) + "\n\t# of different peers in hop: " + reversePath[i].size() + "\n");
+				    	int intermediateCounter = 0;
+				    	for(Integer value: reversePath[i].values()){
+				    	    if(value > 1) {
+				    	    	intermediateCounter++;
+				    	    }
+				    	}
+				    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop (excluding self): " + (counter - reversePath[i].size()) + "\n\t# of different peers in hop that are intermediate: " + intermediateCounter + "\n");
 					}
-				    for(int i = 0; i < max; i++) {
+				    myWriter.write("\n");
+				    for(int i = 0; i < max - 1; i++) { //last hop only has leaf nodes
 						myWriter.write("hop: " + i + "\n");
 						//for(int j = 0; j < reversePath[i].size(); j++) {
 						//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
@@ -211,8 +222,71 @@ public class TrafficGenerator implements Control {
 				    e.printStackTrace();
 				}
 			}
+			//data file for chart generation
+			else if(!transferido4) {
+				transferido4 = true;
+				try {
+					int size = ChordProtocol.path.length;
+					String filename = "output4.txt";
+					FileWriter myWriter = new FileWriter(filename);
+				    
+				    int max = 0;
+				    for(int i = 0; i < size; i++) {
+						if(max < ChordProtocol.path[i].size()) {
+							max = ChordProtocol.path[i].size();
+						}
+					}
+				    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
+				    for(int i = 0; i < max; i++) {
+						reversePath[i] = new HashMap<BigInteger, Integer>();
+					}
+				    for(int i = 0; i < max; i++) {
+				    	int counter = 0;
+				    	for(int j = 0; j < size; j++) {
+							int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
+							if(currPeerIdx >= 0) {
+								counter++;
+								BigInteger peer = ChordProtocol.path[j].get(currPeerIdx);
+								if(reversePath[i].containsKey(peer)) {
+									int currTimes = reversePath[i].get(peer);
+									reversePath[i].replace(peer, currTimes + 1);
+								}
+								else {
+									reversePath[i].put(peer, 1);
+								}
+							}
+				    	}
+				    }
+				    for(int i = 1; i < max - 1; i++) { // first and last files don't have useful data
+						//for(int j = 0; j < reversePath[i].size(); j++) {
+						//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
+						//}
+						Map<Integer, Integer> counts = new HashMap<Integer, Integer>();
+						for (Integer c : reversePath[i].values()) {
+						    int value = counts.get(c) == null ? 0 : counts.get(c);
+						    counts.put(c, value + 1);
+						}        
+						Map<Integer, Integer> treeMap = new TreeMap<>(counts);
+						//System.out.println(counts);
+						//https://stackabuse.com/java-how-to-get-keys-and-values-from-a-map
+						for (Map.Entry<Integer, Integer> pair : treeMap.entrySet()) {
+							myWriter.write(String.format("%s %s\n", pair.getKey() - 1, pair.getValue()));
+						}
+						myWriter.write("\n");
+						
+					}
+					myWriter.write("The file was written until the end.\n");
+				    myWriter.close();
+				    System.out.println("Successfully wrote to the file 4.");
+				}
+				catch(IOException e) {
+					System.out.println("An error occurred.");
+				    e.printStackTrace();
+				}
+			}
 			return false;
 		}
+		
 	}
 	
 	/*public boolean execute() {
