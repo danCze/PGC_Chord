@@ -12,6 +12,7 @@ import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,6 +37,7 @@ public class TrafficGenerator implements Control {
 	private boolean transferido2 = false;
 	private boolean transferido3 = false;
 	private boolean transferido4 = false;
+	private boolean transferido5 = false;
 
 	/**
 	 * 
@@ -278,6 +280,89 @@ public class TrafficGenerator implements Control {
 					myWriter.write("The file was written until the end.\n");
 				    myWriter.close();
 				    System.out.println("Successfully wrote to the file 4.");
+				}
+				catch(IOException e) {
+					System.out.println("An error occurred.");
+				    e.printStackTrace();
+				}
+			}
+			//statistics
+			else if(!transferido5) {
+				transferido5 = true;
+				try {
+					int size = ChordProtocol.path.length;
+					String filename = "output5.txt";
+					FileWriter myWriter = new FileWriter(filename);
+				    
+				    int max = 0;
+				    for(int i = 0; i < size; i++) {
+						if(max < ChordProtocol.path[i].size()) {
+							max = ChordProtocol.path[i].size();
+						}
+					}
+				    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
+				    for(int i = 0; i < max; i++) {
+						reversePath[i] = new HashMap<BigInteger, Integer>();
+					}
+				    for(int i = 0; i < max; i++) {
+				    	int counter = 0;
+				    	for(int j = 0; j < size; j++) {
+							int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
+							if(currPeerIdx >= 0) {
+								counter++;
+								BigInteger peer = ChordProtocol.path[j].get(currPeerIdx);
+								if(reversePath[i].containsKey(peer)) {
+									int currTimes = reversePath[i].get(peer);
+									reversePath[i].replace(peer, currTimes + 1);
+								}
+								else {
+									reversePath[i].put(peer, 1);
+								}
+							}
+				    	}
+				    }
+				    //int count = 0;
+				    //int total = 0;
+					ArrayList<Integer>[] counts = (ArrayList<Integer>[]) new ArrayList[max - 2];
+				    for(int i = 1; i < max - 1; i++) { // first and last files don't have useful data
+						//for(int j = 0; j < reversePath[i].size(); j++) {
+						//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
+						//}
+						//for(int j = 0; j < reversePath[i].size(); j++) {
+						//	total += reversePath[i].get();
+						//	count++;
+						//}
+				    	counts[i - 1] = new ArrayList<Integer>();
+						for (Integer c : reversePath[i].values()) {
+						    counts[i - 1].add(c);
+						}
+						Collections.sort(counts[i - 1], Collections.reverseOrder());
+						int total = 0;
+						for (int j = 0; j < counts[i - 1].size(); j++) {
+							total += counts[i - 1].get(j);
+						}
+						myWriter.write("hop " + i + ":");
+						int sum = 0;
+						for (int j = 0; j < counts[i - 1].size(); j++) {
+							sum += counts[i - 1].get(j);
+							if(total * 0.8 <= sum) {
+								myWriter.write(String.format("\n\t80%% reqs passam por %d nos que representam %.2f%% dos nos desse hop", j + 1, 100.0 * (j + 1) / counts[i - 1].size()));
+								//exact % (at least 80) //myWriter.write(String.format("\n\t%.2f%% reqs passam por %d nos que representam %.2f%% dos nos desse hop", 100.0 * sum / total, j + 1, 100 * (j + 1) / (double) counts[i - 1].size()));
+								break;
+							}
+						}
+						sum = 0;
+						for (int j = 0; j < counts[i - 1].size(); j++) {
+							sum += counts[i - 1].get(j);
+							if(j == 0 || j == 4 || j == 9) {
+								myWriter.write(String.format("\n\t%.2f%% reqs sao registradas por %d nos", 100.0 * sum / total, j + 1));
+							}
+						}
+						myWriter.write("\n\n");
+					}
+					myWriter.write("The file was written until the end.\n");
+				    myWriter.close();
+				    System.out.println("Successfully wrote to the file 5.");
 				}
 				catch(IOException e) {
 					System.out.println("An error occurred.");
