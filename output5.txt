@@ -1,43 +1,67 @@
 hop 1:
-	80% reqs passam por 3 nos que representam 16,67% dos nos desse hop
-	46,95% reqs sao registradas por 1 nos
-	94,09% reqs sao registradas por 5 nos
-	98,70% reqs sao registradas por 10 nos
+	80% reqs passam por 3 nos que representam 13,04% dos nos desse hop
+	41,47% reqs sao registradas por 1 nos
+	93,90% reqs sao registradas por 5 nos
+	98,64% reqs sao registradas por 10 nos
 
 hop 2:
-	80% reqs passam por 17 nos que representam 20,00% dos nos desse hop
-	13,76% reqs sao registradas por 1 nos
-	47,20% reqs sao registradas por 5 nos
-	68,09% reqs sao registradas por 10 nos
+	80% reqs passam por 5 nos que representam 5,56% dos nos desse hop
+	41,32% reqs sao registradas por 1 nos
+	82,77% reqs sao registradas por 5 nos
+	93,53% reqs sao registradas por 10 nos
 
 hop 3:
-	80% reqs passam por 48 nos que representam 24,37% dos nos desse hop
-	10,49% reqs sao registradas por 1 nos
-	37,72% reqs sao registradas por 5 nos
-	52,12% reqs sao registradas por 10 nos
+	80% reqs passam por 29 nos que representam 7,29% dos nos desse hop
+	31,29% reqs sao registradas por 1 nos
+	48,96% reqs sao registradas por 5 nos
+	60,50% reqs sao registradas por 10 nos
 
 hop 4:
-	80% reqs passam por 91 nos que representam 39,57% dos nos desse hop
-	8,73% reqs sao registradas por 1 nos
-	25,18% reqs sao registradas por 5 nos
-	37,05% reqs sao registradas por 10 nos
+	80% reqs passam por 80 nos que representam 9,46% dos nos desse hop
+	17,14% reqs sao registradas por 1 nos
+	36,57% reqs sao registradas por 5 nos
+	46,45% reqs sao registradas por 10 nos
 
 hop 5:
-	80% reqs passam por 166 nos que representam 64,09% dos nos desse hop
-	3,41% reqs sao registradas por 1 nos
-	14,29% reqs sao registradas por 5 nos
-	24,95% reqs sao registradas por 10 nos
+	80% reqs passam por 253 nos que representam 17,08% dos nos desse hop
+	12,03% reqs sao registradas por 1 nos
+	23,29% reqs sao registradas por 5 nos
+	29,17% reqs sao registradas por 10 nos
 
 hop 6:
-	80% reqs passam por 111 nos que representam 72,55% dos nos desse hop
-	4,29% reqs sao registradas por 1 nos
-	16,67% reqs sao registradas por 5 nos
-	24,76% reqs sao registradas por 10 nos
+	80% reqs passam por 574 nos que representam 29,66% dos nos desse hop
+	6,37% reqs sao registradas por 1 nos
+	16,86% reqs sao registradas por 5 nos
+	23,14% reqs sao registradas por 10 nos
 
 hop 7:
-	80% reqs passam por 41 nos que representam 78,85% dos nos desse hop
-	5,26% reqs sao registradas por 1 nos
-	17,54% reqs sao registradas por 5 nos
-	26,32% reqs sao registradas por 10 nos
+	80% reqs passam por 915 nos que representam 46,68% dos nos desse hop
+	3,08% reqs sao registradas por 1 nos
+	8,74% reqs sao registradas por 5 nos
+	13,57% reqs sao registradas por 10 nos
+
+hop 8:
+	80% reqs passam por 918 nos que representam 58,43% dos nos desse hop
+	2,73% reqs sao registradas por 1 nos
+	7,29% reqs sao registradas por 5 nos
+	11,67% reqs sao registradas por 10 nos
+
+hop 9:
+	80% reqs passam por 610 nos que representam 64,28% dos nos desse hop
+	1,65% reqs sao registradas por 1 nos
+	6,84% reqs sao registradas por 5 nos
+	11,56% reqs sao registradas por 10 nos
+
+hop 10:
+	80% reqs passam por 367 nos que representam 71,12% dos nos desse hop
+	2,01% reqs sao registradas por 1 nos
+	7,91% reqs sao registradas por 5 nos
+	12,73% reqs sao registradas por 10 nos
+
+hop 11:
+	80% reqs passam por 147 nos que representam 76,17% dos nos desse hop
+	2,17% reqs sao registradas por 1 nos
+	9,13% reqs sao registradas por 5 nos
+	15,65% reqs sao registradas por 10 nos
 
 The file was written until the end.
