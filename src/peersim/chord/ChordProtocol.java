@@ -19,6 +19,8 @@ public class ChordProtocol implements EDProtocol {
 
 	private static final String PAR_TRANSPORT = "transport";
 
+	private static final String PAR_BIDIRECTIONALKEYS = "bidirectionalKeys";
+
 	private Parameters p;
 
 	private int[] lookupMessage; 
@@ -52,7 +54,11 @@ public class ChordProtocol implements EDProtocol {
 	
 	public static final int size = Network.size();
 	
-	public static ArrayList<BigInteger>[] path = new ArrayList[size];
+	public static int bidirectionalKeys;
+	
+	public static int pathSize;
+	
+	public static ArrayList<BigInteger>[] path;
 	
 	//public static int pathIndex = 0;
 	
@@ -67,6 +73,10 @@ public class ChordProtocol implements EDProtocol {
 		lookupMessage[0] = 0;
 		p = new Parameters();
 		p.tid = Configuration.getPid(prefix + "." + PAR_TRANSPORT);
+		
+		bidirectionalKeys = Configuration.getInt(prefix + "." + PAR_BIDIRECTIONALKEYS);
+		pathSize = size * (2 * bidirectionalKeys + 1);
+		path = new ArrayList[pathSize];
 	}
 
 	/*
