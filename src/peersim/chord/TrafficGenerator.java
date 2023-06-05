@@ -9,8 +9,10 @@ import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -54,7 +56,22 @@ public class TrafficGenerator implements Control {
 			executou = 1;
 			
 			int size = Network.size();
-			folder = "./" + (String.valueOf(size)) + "/" + (String.valueOf(CommonState.r.getLastSeed()) + "/");
+			String keys = String.valueOf(1 + 2 * ChordProtocol.bidirectionalKeys);
+			
+			PrintWriter writer;
+			try {
+				writer = new PrintWriter("keys.cfg", "ASCII");
+				writer.println(keys);
+				writer.close();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			folder = "./" + keys + "/" + (String.valueOf(size)) + "/" + (String.valueOf(CommonState.r.getLastSeed()) + "/");
 			File createFolder = new File(folder);
 			createFolder.mkdirs();
 			

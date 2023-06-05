@@ -1,4 +1,5 @@
 import os
+from getkeys import get_keys
 
 class Stats:
     def __init__(self):
@@ -11,11 +12,11 @@ class Stats:
 
 # read files and store the data
 def extract_data(folder):
-    dir_list = [x[0] for x in os.walk(".\\" + str(folder))]
+    dir_list = [x[0] for x in os.walk(".\\" + get_keys() + "\\" + str(folder))]
     dir_list.pop(0)
 
     stats_list = []
-    for i in range(30):
+    for i in range(len(dir_list)):
         stats = Stats()
         input_file = open(dir_list[i] + "\\" + "output6.txt", "r", 1)
         lines_list = input_file.readlines()
@@ -45,8 +46,8 @@ def extract_data(folder):
 # max num of hops in all files
 def calc_max_hop(stats_list):
     max_hop = 0
-    for i in range(30):
-        curr_len = len(stats_list[i].p80)
+    for stats in stats_list:
+        curr_len = len(stats.p80)
         if(curr_len > max_hop):
             max_hop = curr_len
     return max_hop
@@ -62,16 +63,16 @@ def calc_mean(stats_list, max_hop):
         stats_mean.p1.append(0)
         stats_mean.p5.append(0)
         stats_mean.p10.append(0)
-        for j in range(30):
-            curr_max_hop = len(stats_list[j].p80)
+        for stats in stats_list:
+            curr_max_hop = len(stats.p80)
             if(i < curr_max_hop):
                 counter += 1
-                stats_mean.min80[i] += stats_list[j].min80[i]
-                stats_mean.num80[i] += stats_list[j].num80[i]
-                stats_mean.p80[i] += stats_list[j].p80[i]
-                stats_mean.p1[i] += stats_list[j].p1[i]
-                stats_mean.p5[i] += stats_list[j].p5[i]
-                stats_mean.p10[i] += stats_list[j].p10[i]
+                stats_mean.min80[i] += stats.min80[i]
+                stats_mean.num80[i] += stats.num80[i]
+                stats_mean.p80[i] += stats.p80[i]
+                stats_mean.p1[i] += stats.p1[i]
+                stats_mean.p5[i] += stats.p5[i]
+                stats_mean.p10[i] += stats.p10[i]
         stats_mean.min80[i] /= counter
         stats_mean.num80[i] /= counter
         stats_mean.p80[i] /= counter
@@ -91,16 +92,16 @@ def calc_std_dev(stats_list, stats_mean, max_hop):
         std_dev.p1.append(0)
         std_dev.p5.append(0)
         std_dev.p10.append(0)
-        for j in range(30):
-            curr_max_hop = len(stats_list[j].p80)
+        for stats in stats_list:
+            curr_max_hop = len(stats.p80)
             if(i < curr_max_hop):
                 counter += 1
-                std_dev.min80[i] += (stats_mean.min80[i] - stats_list[j].min80[i])**2
-                std_dev.num80[i] += (stats_mean.num80[i] - stats_list[j].num80[i])**2
-                std_dev.p80[i] += (stats_mean.p80[i] - stats_list[j].p80[i])**2
-                std_dev.p1[i] += (stats_mean.p1[i] - stats_list[j].p1[i])**2
-                std_dev.p5[i] += (stats_mean.p5[i] - stats_list[j].p5[i])**2
-                std_dev.p10[i] += (stats_mean.p10[i] - stats_list[j].p10[i])**2
+                std_dev.min80[i] += (stats_mean.min80[i] - stats.min80[i])**2
+                std_dev.num80[i] += (stats_mean.num80[i] - stats.num80[i])**2
+                std_dev.p80[i] += (stats_mean.p80[i] - stats.p80[i])**2
+                std_dev.p1[i] += (stats_mean.p1[i] - stats.p1[i])**2
+                std_dev.p5[i] += (stats_mean.p5[i] - stats.p5[i])**2
+                std_dev.p10[i] += (stats_mean.p10[i] - stats.p10[i])**2
         std_dev.min80[i] /= counter
         std_dev.num80[i] /= counter
         std_dev.p80[i] /= counter
@@ -117,7 +118,7 @@ def calc_std_dev(stats_list, stats_mean, max_hop):
 
 # save mean and std_dev
 def save_data(size, stats_mean, std_dev, max_hop):
-    f = open("stats_" + str(size) + ".txt", "w")
+    f = open(get_keys() + "\\" + "stats_" + str(size) + ".txt", "w")
     for i in range(max_hop):
         f.write("hop: " + str(i + 1) + "\n")
         f.write(str(stats_mean.min80[i]) + " ")
@@ -134,7 +135,7 @@ def save_data(size, stats_mean, std_dev, max_hop):
         f.write(str(std_dev.p10[i]) + "\n")
 
 if __name__ == "__main__":
-    for size in [1000, 10000, 100000, 1000000]:
+    for size in [f.name for f in os.scandir(get_keys()) if f.is_dir()]:
         stats = extract_data(size)
         max_hop = calc_max_hop(stats)
         mean = calc_mean(stats, max_hop)

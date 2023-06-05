@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+from getkeys import get_keys
 
 class Stats:
     def __init__(self):
@@ -17,7 +18,7 @@ class Stats:
 # read files and store the data
 def extract_data(size):
     stats = Stats()
-    input_file = open("stats_" + str(size) + ".txt", "r", 1)
+    input_file = open(get_keys() + "\\stats_" + str(size) + ".txt", "r", 1)
     lines_list = input_file.readlines()
     
     for i in range(len(lines_list)):
@@ -95,19 +96,17 @@ def save_charts(stats, plot):
     plt.yticks(range(0, 101, 10))
     
     #save and plot charts
-    name = "metrics_" + str(size) + "_" + sys.argv[1]
+    name = get_keys() + "\\" + "metrics_" + str(size) + "_" + get_keys()
     plt.savefig(name, dpi = 100)
     plt.show()
     
 if __name__ == "__main__":
-    if len(sys.argv) < 2 or sys.argv[1] == "-h" or sys.argv[1] == "--help":
-        exit("call program like this:\npython gen.py <1+2*<bidirectionalKeys>> [e]")
-    if int(sys.argv[1]) % 2 != 1:
-        exit("number of keys must be an odd number")
-    if len(sys.argv) > 2 and sys.argv[2] == "e":
+    if len(sys.argv) > 1 and (sys.argv[1] == "-h" or sys.argv[1] == "--help"):
+        exit("call program like this:\npython gen.py [e]")
+    if len(sys.argv) > 1 and sys.argv[1] == "e":
         plot = "std_dev"
     else:
         plot = "simple"
-    for size in [1000, 10000, 100000, 1000000]:
+    for size in [f.name for f in os.scandir(get_keys()) if f.is_dir()]:
         stats = extract_data(size)
         save_charts(stats, plot)
