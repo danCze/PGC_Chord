@@ -10,7 +10,7 @@ Utilizar arquivo de configuração, conforme especificação do PeerSim.
 
 **Arquivo de dados**
 
-O script verifica as pastas com os nomes {"1000","10000","100000","1000000"} e gera um arquivo de dados para cada pasta.
+O script verifica todos os subdiretórios para o diretório indicado pelo arquivo "keys.cfg" e gera um arquivo de dados para cada pasta.
 
 ```bash
 python statistics_std.py
