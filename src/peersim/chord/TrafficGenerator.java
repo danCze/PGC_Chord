@@ -146,18 +146,17 @@ public class TrafficGenerator implements Control {
 				String filename = folder + "output2.txt";
 				FileWriter myWriter = new FileWriter(filename);
 			    
-			    int max = 0;
+			    int maxPathLength = 0;
 			    for(int i = 0; i < size; i++) {
-					if(max < ChordProtocol.path[i].size()) {
-						max = ChordProtocol.path[i].size();
+					if(maxPathLength < ChordProtocol.path[i].size()) {
+						maxPathLength = ChordProtocol.path[i].size();
 					}
 				}
-			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
-			    for(int i = 0; i < max; i++) {
+			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[maxPathLength];
+			    for(int i = 0; i < maxPathLength; i++) {
 					reversePath[i] = new HashMap<BigInteger, Integer>();
-				}
-			    for(int i = 0; i < max; i++) {
-			    	int counter = 0;
+
+					int counter = 0;
 			    	for(int j = 0; j < size; j++) {
 						int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
 						if(currPeerIdx >= 0) {
@@ -175,7 +174,7 @@ public class TrafficGenerator implements Control {
 			    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop (including self): " + counter + "\n\t# of different peers in hop: " + reversePath[i].size() + "\n");
 				}
 			    myWriter.write("\n");
-			    for(int i = 0; i < max; i++) {
+			    for(int i = 0; i < maxPathLength; i++) {
 					myWriter.write("hop: " + i + "\n");
 					//for(int j = 0; j < reversePath[i].size(); j++) {
 					//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
@@ -202,18 +201,17 @@ public class TrafficGenerator implements Control {
 				String filename = folder + "output3.txt";
 				FileWriter myWriter = new FileWriter(filename);
 			    
-			    int max = 0;
+			    int maxPathLength = 0;
 			    for(int i = 0; i < size; i++) {
-					if(max < ChordProtocol.path[i].size()) {
-						max = ChordProtocol.path[i].size();
+					if(maxPathLength < ChordProtocol.path[i].size()) {
+						maxPathLength = ChordProtocol.path[i].size();
 					}
 				}
-			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
-			    for(int i = 0; i < max; i++) {
+			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[maxPathLength];
+			    for(int i = 0; i < maxPathLength; i++) {
 					reversePath[i] = new HashMap<BigInteger, Integer>();
-				}
-			    for(int i = 0; i < max; i++) {
-			    	int counter = 0;
+
+					int counter = 0;
 			    	for(int j = 0; j < size; j++) {
 						int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
 						if(currPeerIdx >= 0) {
@@ -237,7 +235,7 @@ public class TrafficGenerator implements Control {
 			    	myWriter.write("hop " + i + ":\n\ttotal peers that pass through hop (excluding self): " + (counter - reversePath[i].size()) + "\n\t# of different peers in hop that are intermediate: " + intermediateCounter + "\n");
 				}
 			    myWriter.write("\n");
-			    for(int i = 0; i < max - 1; i++) { //last hop only has leaf nodes
+			    for(int i = 0; i < maxPathLength - 1; i++) { //last hop only has leaf nodes
 					myWriter.write("hop: " + i + "\n");
 					//for(int j = 0; j < reversePath[i].size(); j++) {
 					//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
@@ -266,17 +264,16 @@ public class TrafficGenerator implements Control {
 //				String filename = folder + "output4.txt";
 //				FileWriter myWriter = new FileWriter(filename);
 //			    
-//			    int max = 0;
+//			    int maxPathLength = 0;
 //			    for(int i = 0; i < size; i++) {
-//					if(max < ChordProtocol.path[i].size()) {
-//						max = ChordProtocol.path[i].size();
+//					if(maxPathLength < ChordProtocol.path[i].size()) {
+//						maxPathLength = ChordProtocol.path[i].size();
 //					}
 //				}
-//			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
-//			    for(int i = 0; i < max; i++) {
+//			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[maxPathLength];
+//			    for(int i = 0; i < maxPathLength; i++) {
 //					reversePath[i] = new HashMap<BigInteger, Integer>();
-//				}
-//			    for(int i = 0; i < max; i++) {
+//
 //			    	int counter = 0;
 //			    	for(int j = 0; j < size; j++) {
 //						int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
@@ -293,7 +290,7 @@ public class TrafficGenerator implements Control {
 //						}
 //			    	}
 //			    }
-//			    for(int i = 1; i < max - 1; i++) { // first and last files don't have useful data
+//			    for(int i = 1; i < maxPathLength - 1; i++) { // first and last files don't have useful data
 //					//for(int j = 0; j < reversePath[i].size(); j++) {
 //					//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
 //					//}
@@ -327,17 +324,16 @@ public class TrafficGenerator implements Control {
 //				String filename = folder + "output5.txt";
 //				FileWriter myWriter = new FileWriter(filename);
 //			    
-//			    int max = 0;
+//			    int maxPathLength = 0;
 //			    for(int i = 0; i < size; i++) {
-//					if(max < ChordProtocol.path[i].size()) {
-//						max = ChordProtocol.path[i].size();
+//					if(maxPathLength < ChordProtocol.path[i].size()) {
+//						maxPathLength = ChordProtocol.path[i].size();
 //					}
 //				}
-//			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
-//			    for(int i = 0; i < max; i++) {
+//			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[maxPathLength];
+//			    for(int i = 0; i < maxPathLength; i++) {
 //					reversePath[i] = new HashMap<BigInteger, Integer>();
-//				}
-//			    for(int i = 0; i < max; i++) {
+//
 //			    	int counter = 0;
 //			    	for(int j = 0; j < size; j++) {
 //						int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
@@ -356,12 +352,11 @@ public class TrafficGenerator implements Control {
 //			    }
 //			    //int count = 0;
 //			    //int total = 0;
-//				ArrayList<Integer>[] counts = (ArrayList<Integer>[]) new ArrayList[max - 2];
-//			    for(int i = 1; i < max - 1; i++) { // first and last files don't have useful data
+//				ArrayList<Integer>[] counts = (ArrayList<Integer>[]) new ArrayList[maxPathLength - 2];
+//			    for(int i = 1; i < maxPathLength - 1; i++) { // first and last files don't have useful data
 //					//for(int j = 0; j < reversePath[i].size(); j++) {
 //					//	myWriter.write(reversePath[i].get(j) + " " +  +"\n");
-//					//}
-//					//for(int j = 0; j < reversePath[i].size(); j++) {
+//					//
 //					//	total += reversePath[i].get();
 //					//	count++;
 //					//}
@@ -409,18 +404,17 @@ public class TrafficGenerator implements Control {
 				String filename = folder + "output6.txt";
 				FileWriter myWriter = new FileWriter(filename);
 			    
-			    int max = 0;
+			    int maxPathLength = 0;
 			    for(int i = 0; i < size; i++) {
-					if(max < ChordProtocol.path[i].size()) {
-						max = ChordProtocol.path[i].size();
+					if(maxPathLength < ChordProtocol.path[i].size()) {
+						maxPathLength = ChordProtocol.path[i].size();
 					}
 				}
-			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[max];
-			    for(int i = 0; i < max; i++) {
+			    HashMap<BigInteger, Integer>[] reversePath = new HashMap[maxPathLength];
+			    for(int i = 0; i < maxPathLength; i++) {
 					reversePath[i] = new HashMap<BigInteger, Integer>();
-				}
-			    for(int i = 0; i < max; i++) {
-			    	int counter = 0;
+					
+					int counter = 0;
 			    	for(int j = 0; j < size; j++) {
 						int currPeerIdx = ChordProtocol.path[j].size() - 1 - i;
 						if(currPeerIdx >= 0) {
@@ -436,8 +430,8 @@ public class TrafficGenerator implements Control {
 						}
 			    	}
 			    }
-				ArrayList<Integer>[] counts = (ArrayList<Integer>[]) new ArrayList[max - 2];
-			    for(int i = 1; i < max - 1; i++) { // first and last files don't have useful data
+				ArrayList<Integer>[] counts = (ArrayList<Integer>[]) new ArrayList[maxPathLength - 2];
+			    for(int i = 1; i < maxPathLength - 1; i++) { // first and last hops don't have useful data
 			    	counts[i - 1] = new ArrayList<Integer>();
 					for (Integer c : reversePath[i].values()) {
 					    counts[i - 1].add(c - 1);
