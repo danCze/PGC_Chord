@@ -36,9 +36,9 @@ python gen_charts.py
 
 **Demais scripts**
 
-counter.py - mostra a distribuição de simulações por tamanho da árvore de convergência
-getkeys.py - utilitário para ler "keys.cfg"
-high_level.py - tentativa de mostrar uma relação entre ser um nível alto e algum dado
-low_level.py - tentativa de mostrar uma relação entre ser um nível baixo e algum dado
-stats.py - converte os dados gerados por "amount.py" em %
+counter.py - mostra a distribuição de simulações por tamanho da árvore de convergência\
+getkeys.py - utilitário para ler "keys.cfg"\
+high_level.py - tentativa de mostrar uma relação entre ser um nível alto e algum dado\
+low_level.py - tentativa de mostrar uma relação entre ser um nível baixo e algum dado\
+stats.py - converte os dados gerados por "amount.py" em %\
 subpath.py - quantidade de nós com ou sem subcaminhos em cada nível, e total de subcaminhos
