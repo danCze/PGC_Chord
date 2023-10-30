@@ -59,8 +59,8 @@ def calc_max_sim_size(sim_list):
 # calc mean
 def calc_mean(sim_list, max_sim_size, length_filter):
     sims_mean = Sim()
+    sim_amount = len(sim_list)
     for i in range(max_sim_size):
-        sim_in_hop_counter = 0;
         sims_mean.subpath_amount.append(0)
         sims_mean.no_subpath_amount.append(0)
         sims_mean.total.append(0)
@@ -69,15 +69,12 @@ def calc_mean(sim_list, max_sim_size, length_filter):
             if(length_filter == True and max_sim_size != sim_size):
                 continue
             if(i < sim_size):
-                sim_in_hop_counter +=1
                 sims_mean.subpath_amount[i] += sim.subpath_amount[i]
                 sims_mean.no_subpath_amount[i] += sim.no_subpath_amount[i]
                 sims_mean.total[i] += sim.total[i]
-        sims_mean.subpath_amount[i] /= sim_in_hop_counter
-        sims_mean.no_subpath_amount[i] /= sim_in_hop_counter
-        #print(sims_mean.total[i], end=" ")
-        #print(sim_in_hop_counter)
-        sims_mean.total[i] /= sim_in_hop_counter
+        sims_mean.subpath_amount[i] /= sim_amount
+        sims_mean.no_subpath_amount[i] /= sim_amount
+        sims_mean.total[i] /= sim_amount
     return sims_mean
 
 # calc std_dev

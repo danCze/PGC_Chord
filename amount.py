@@ -56,6 +56,7 @@ def calc_max_sim_size(sim_list):
 # calc mean
 def calc_mean(sim_list, max_sim_size, length_filter):
     sims_mean = Sim()
+    sim_amount = len(sim_list)
     for i in range(max_sim_size):
         sim_in_hop_counter = 0
         sims_mean.pareto1.append(0)
@@ -69,19 +70,18 @@ def calc_mean(sim_list, max_sim_size, length_filter):
             if length_filter == True and max_sim_size != sim_size:
                 continue
             if i < sim_size:
-                sim_in_hop_counter +=1
                 sims_mean.pareto1[i] += sim.pareto1[i]
                 sims_mean.pareto2[i] += sim.pareto2[i]
                 sims_mean.m1[i] += sim.m1[i]
                 sims_mean.m5[i] += sim.m5[i]
                 sims_mean.m10[i] += sim.m10[i]
                 sims_mean.total[i] += sim.total[i]
-        sims_mean.pareto1[i] /= sim_in_hop_counter
-        sims_mean.pareto2[i] /= sim_in_hop_counter
-        sims_mean.m1[i] /= sim_in_hop_counter
-        sims_mean.m5[i] /= sim_in_hop_counter
-        sims_mean.m10[i] /= sim_in_hop_counter
-        sims_mean.total[i] /= sim_in_hop_counter
+        sims_mean.pareto1[i] /= sim_amount
+        sims_mean.pareto2[i] /= sim_amount
+        sims_mean.m1[i] /= sim_amount
+        sims_mean.m5[i] /= sim_amount
+        sims_mean.m10[i] /= sim_amount
+        sims_mean.total[i] /= sim_amount
     return sims_mean
 
 # calc std_dev
